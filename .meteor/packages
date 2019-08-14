@@ -22,3 +22,7 @@ blaze-html-templates
 gadicohen:sitemaps
 underscore
 less
+useraccounts:core
+useraccounts:iron-routing
+accounts-password
+useraccounts:unstyled

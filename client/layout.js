@@ -18,6 +18,21 @@ Template.layout.onDestroyed(function() {});
 // ================================================================
 Template.layout.events({
 
+    /**
+     * Log Out
+     * @event click [hook="logout"]
+     * @param event DOM event
+     * @param templateInstance Blaze template instance
+     */
+    'click [hook="logout"]': (event, templateInstance) => {
+
+        // Prevent default event behavior
+        event.preventDefault();
+
+        AccountsTemplates.logout();
+
+    },
+
     // ================================================================
     // EVENT: open off-canvas nav
     // ================================================================
