@@ -7,6 +7,7 @@
 
 		background-color: #f6f6f6;
 		padding: 10px;
+		z-index: @zindex-1;
 
 		.navbar-dropdown{
 
@@ -31,6 +32,12 @@
 			}
 
 		}
+
+	}
+
+	.main{
+
+		position: relative;
 
 	}
 
@@ -92,6 +99,7 @@
 
 	.mobile-navbar{
 
+		z-index: @zindex-1;
 		background-color: #f6f6f6;
 		position: fixed;
 		transition: right .5s;
@@ -106,7 +114,8 @@
 
 		transition: right .5s;
 		position: relative;
-		margin-top: 50px;
+		min-height: 100vh;
+		padding-top: 52px;
 
 	}
 
