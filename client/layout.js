@@ -28,7 +28,6 @@ Template.layout.events({
 
         if ($('[hook="off-canvas-menu"]').position().left === $(document).width()) {
 
-            console.log('off canvas is visible', $('[hook="off-canvas-menu"]').position(), $(document).width());
             $('[hook="off-canvas-menu"]').css('right', '00px');
             $('[hook="main"]').css('right', '300px');
             $('[hook="mobile-navbar"]').css('right', '300px');

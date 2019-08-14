@@ -4,8 +4,24 @@
         <header class="navbar">
             <section class="navbar-section">
                 <a href="#" class="navbar-brand mr-2">BRAND GOES HERE</a>
-                <a href="{{pathFor 'pageHome'}}" class="btn btn-link">Home</a>
-                <a href="{{pathFor 'page2'}}" class="btn btn-link">Page 2</a>
+
+                    <a href="{{pathFor 'pageHome'}}" class="btn btn-link">Home</a>
+
+                <span class="navbar-dropdown">
+                    <a href="{{pathFor 'page2'}}" class="btn btn-link">Page 2</a>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#">
+                                Page 3
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                Page 4
+                            </a>
+                        </li>
+                    </ul>
+                </span>
             </section>
             <section class="navbar-section">
                 <a href="#" class="btn btn-link">Log In</a>

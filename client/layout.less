@@ -8,7 +8,32 @@
 		background-color: #f6f6f6;
 		padding: 10px;
 
+		.navbar-dropdown{
+
+			position: relative;
+
+			.menu{
+				position: absolute;
+				top: 25px;
+				left: 0;
+				display: none;
+
+			}
+
+		}
+
+		.navbar-dropdown:hover{
+
+			.menu{
+
+				display: block;
+
+			}
+
+		}
+
 	}
+
 }
 
 @media screen and (max-width: @size-md) {
@@ -37,6 +62,26 @@
 					text-align: left;
 					display: block;
 					padding: 10px;
+					height: auto;
+				}
+
+				.navbar-dropdown{
+
+					> a{
+						padding-bottom: 0;
+					}
+
+					.menu{
+
+						padding: 0 10px;
+						background: none;
+						box-shadow: none;
+
+						.menu-item{
+							padding: 0 0 0 20px;
+							margin: 0;
+						}
+					}
 				}
 
 			}
@@ -47,11 +92,13 @@
 
 	.mobile-navbar{
 
+		background-color: #f6f6f6;
 		position: fixed;
 		transition: right .5s;
 		top: 0;
 		right: 0;
 		width: 100%;
+		padding: 10px;
 
 	}
 
