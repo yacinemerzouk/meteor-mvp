@@ -1,0 +1,29 @@
+// Filters
+.filter {
+  .filter-nav {
+    margin: @layout-spacing 0;
+  }
+
+  .filter-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-tag {
+    &#tag-all:checked ~ .filter-nav .chip[for="tag-all"],
+    &#tag-1:checked ~ .filter-nav .chip[for="tag-1"],
+    &#tag-2:checked ~ .filter-nav .chip[for="tag-2"],
+    &#tag-3:checked ~ .filter-nav .chip[for="tag-3"],
+    &#tag-4:checked ~ .filter-nav .chip[for="tag-4"] {
+      background: @primary-color;
+      color: @light-color;
+    }
+
+    &#tag-1:checked ~ .filter-body .card:not([data-tag~="tag-1"]),
+    &#tag-2:checked ~ .filter-body .card:not([data-tag~="tag-2"]),
+    &#tag-3:checked ~ .filter-body .card:not([data-tag~="tag-3"]),
+    &#tag-4:checked ~ .filter-body .card:not([data-tag~="tag-4"]) {
+      display: none;
+    }
+  }
+}

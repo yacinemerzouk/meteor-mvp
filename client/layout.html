@@ -1,0 +1,32 @@
+<!-- /client/layout.html -->
+<template name="layout">
+    <div class="desktop-navbar off-canvas-menu" hook="off-canvas-menu">
+        <header class="navbar">
+            <section class="navbar-section">
+                <a href="#" class="navbar-brand mr-2">BRAND GOES HERE</a>
+                <a href="{{pathFor 'pageHome'}}" class="btn btn-link">Home</a>
+                <a href="{{pathFor 'page2'}}" class="btn btn-link">Page 2</a>
+            </section>
+            <section class="navbar-section">
+                <a href="#" class="btn btn-link">Log In</a>
+                <a href="#" class="btn btn-link">Sign Up</a>
+            </section>
+        </header>
+    </div>
+    <div class="mobile-navbar show-md" hook="mobile-navbar">
+        <header class="navbar">
+            <section class="navbar-section">
+                <a href="#" class="btn btn-link">BACK</a>
+            </section>
+            <section class="navbar-center">
+                PAGE TITLE
+            </section>
+            <section class="navbar-section">
+                <a href="#" class="btn btn-link" hook="toggle-off-canvas-menu">MENU</a>
+            </section>
+        </header>
+    </div>
+    <section class="main" hook="main">
+        {{>yield}}
+    </section>
+</template>

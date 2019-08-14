@@ -1,0 +1,11 @@
+{
+  "name": "test-for-meteorhubdotnet-seo",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "meteor-node-stubs": "^0.4.1"
+  }
+}
