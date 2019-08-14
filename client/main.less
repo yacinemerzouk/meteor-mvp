@@ -6,3 +6,73 @@
 * {
 	box-sizing: border-box;
 }
+
+.at-form{
+
+	width: 300px;
+	margin: 20px auto;
+
+	.at-error{
+
+		background-color: @error-color;
+		color: #fff;
+		padding: 10px;
+		border-radius: 3px;
+		margin-bottom: 10px;
+
+		p{
+			margin-bottom: 0;
+		}
+
+	}
+
+	.at-result{
+
+		background-color: @success-color;
+		color: #fff;
+		padding: 10px;
+		border-radius: 3px;
+		margin-bottom: 10px;
+
+		p{
+			margin-bottom: 0;
+		}
+
+	}
+
+	form{
+
+		margin-bottom: 20px;
+
+		.at-input {
+
+			margin-bottom: 10px;
+
+			label {
+				display: block;
+				font-size: 12px;
+				font-weight: bold;
+			}
+
+			input {
+				width: 100%;
+			}
+		}
+
+		.at-input.has-error{
+			input{
+				border-color: @error-color
+			}
+			span{
+				color: @error-color;
+				font-size: 12px;
+			}
+		}
+
+		button.submit{
+			width: 100%;
+		}
+
+	}
+
+}
